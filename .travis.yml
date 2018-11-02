@@ -1,0 +1,22 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+before_install:
+  -sudo pip install docker-compose
+
+install:
+  -sudo docker-compose build
+  -sudo docker-compose up -d
+before_script:
+  -sudo docker exec -it cvat sh -c '/usr/bin/python3 ~/manage.py createsuperuser'
+  -admin
+  -123
+  -123
+  -123
+
+script:
+  -
