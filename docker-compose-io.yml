@@ -1,5 +1,0 @@
-services:
-  cvat:
-    build:
-      args:
-        WITH_TESTS: "yes"
