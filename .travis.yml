@@ -13,7 +13,7 @@ services:
 before_script:
   - sudo docker-compose -f docker-compose.yml -f docker-compose-ci.yml build
   - sudo docker-compose up -d
-  - sudo docker exec -it cvat sh -c '/usr/bin/python3 ~/manage.py createsuperuser'
+  - docker exec -it cvat sh -c '/usr/bin/python3 ~/manage.py createsuperuser'
   - admin
   - 123
   - 123
