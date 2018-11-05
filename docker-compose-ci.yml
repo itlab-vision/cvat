@@ -47,4 +47,4 @@ services:
         TF_ANNOTATION: "no"
         USER: "django"
         DJANGO_CONFIGURATION: "production"
-        WITH_TESTS: "no"
+        WITH_TESTS: "yes"
