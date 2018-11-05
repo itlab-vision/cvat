@@ -5,6 +5,9 @@ language: python
 services:
   - docker
 
+before script:
+-docker exec -it cvat sh -c '/usr/bin/python3 ~/manage.py createsuperuser'
+
 script: 
 - docker-compose build
-- docker-compose up
+- docker-compose up -d
