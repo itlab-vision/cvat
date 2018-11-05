@@ -9,8 +9,8 @@ services:
   - docker
 
 before_script:
-  - sudo docker-compose -f docker-compose.yml -f docker-compose-ci.yml build
-  - sudo docker-compose up -d
+  - docker-compose -f docker-compose.yml -f docker-compose-ci.yml build
+  - docker-compose up -d
   - docker exec -it cvat sh -c '/usr/bin/python3 ~/manage.py createsuperuser'
   - admin
   - 123
@@ -18,5 +18,5 @@ before_script:
   - 123
   
 script:
-  
+  - /home/django/tests/node_modules/.bin/karma start
 
