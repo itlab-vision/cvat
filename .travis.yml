@@ -13,5 +13,5 @@ before_script:
   - docker-compose up -d
   
 script:
-  - /home/django/tests/node_modules/.bin/karma start
+  - /home/django/tests/node_modules/.bin/karma
 
