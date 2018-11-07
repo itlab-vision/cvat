@@ -4,6 +4,9 @@ language: python
 
 python:
   - "3.5"
+install:
+  - pip install python-coveralls
+  - pip inctall coverage
 
 services:
   - docker
@@ -13,5 +16,8 @@ before_script:
   - docker-compose up -d
   
 script:
-  - /home/django/tests/node_modules/.bin/karma
+  - cd ../
+  - cd /home/django/tests/node_modules/.bin/karma
 
+after_success:
+  -coveralls
