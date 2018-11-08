@@ -17,10 +17,8 @@ before_script:
   - docker-compose up -d
   
 script:
-  - cd ../
-  - cd ../
-  - cd ../
-  - cd ./home/django/tests/node_modules/.bin/karma
+  - docker exec cvat -it cvat bash
+  - cd ./home/django/tests/node_modules/.bin/karma start
 
 after_success:
   -coveralls
