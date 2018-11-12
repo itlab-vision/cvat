@@ -18,7 +18,7 @@ before_script:
   
 script:
   - docker exec cvat -it cvat bash
-  - cd ./home/django/tests/node_modules/.bin/karma start
+  - /tests/node_modules/.bin/karma start
 
 after_success:
   -coveralls
