@@ -17,9 +17,7 @@ before_script:
   - docker-compose up -d
   
 script:
-  - docker exec -it cvat sh
-  - cd tests/node_modules/.bin
-  - karma start
+  - docker exec -it cvat sh -c '/tests/node_modules/.bin ~/karma start'
   
 after_success:
   -coveralls
