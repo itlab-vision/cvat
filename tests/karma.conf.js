@@ -39,7 +39,7 @@ module.exports = function(config) {
     coverageReporter: {
       dir: path.join(process.env.HOME, 'media/coverage'),
       reporters: [
-        { type: 'html', subdir: '.' },
+        { type: 'html', subdir: '.' }, { type: 'lcov', subdir: 'report-lcov' } 
       ],
       instrumenterOptions: {
        istanbul: { noCompact: true }
