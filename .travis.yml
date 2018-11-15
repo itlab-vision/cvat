@@ -15,4 +15,4 @@ before_script:
 script:
   - docker exec -it cvat /bin/bash -c '/home/django/tests/node_modules/.bin/karma start tests/karma.conf.js'
 after_success:
-  - docker exec -it cvat /bin/bash -c 'cat /home/django/media/lcov.info'
+  - docker exec -it cvat /bin/bash -c 'cat /home/django/media/coverage/lcov.info'
