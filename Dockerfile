@@ -72,9 +72,8 @@ RUN if [ "$WITH_TESTS" = "yes" ]; then \
         mkdir tests && cd tests && npm install \
             eslint \
             eslint-detailed-reporter \
-            karma \
             karma-chrome-launcher \
-            karma-coveralls \
+            coveralls \
             karma-coverage \
             karma-junit-reporter \
             karma-qunit \
