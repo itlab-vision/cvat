@@ -34,7 +34,7 @@ module.exports = function(config) {
         '**/!(qunitTests).js': ['coverage']
     },
 
-    reporters: ['progress', 'junit', 'coverage', 'coveralls'],
+    reporters: ['progress', 'junit', 'coverage'],
 
     coverageReporter: {
       dir: path.join(process.env.HOME, 'media/coverage'),
