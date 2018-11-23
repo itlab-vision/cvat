@@ -5,8 +5,6 @@ language: node_js
 services:
   - docker
   
-env:
-  - COVERALLS_REPO_TOKEN=S8AMWXHilyXVVrhjpkWUcOlA07KM8AoPR
 install:
   - npm install coveralls
 before_script:
