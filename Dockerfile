@@ -60,7 +60,6 @@ RUN if [ "$TF_ANNOTATION" = "yes" ]; then \
     fi
 
 ARG WITH_TESTS
-ENV COVERALLS_REPO_TOKEN=S8AMWXHilyXVVrhjpkWUcOlA07KM8AoPR
 RUN if [ "$WITH_TESTS" = "yes" ]; then \
         wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
         echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list && \
