@@ -6,7 +6,8 @@ python:
   - "3.5"
 
 env:
-  -TRAVIS_SECURE_ENV_VARS=true
+  - TRAVIS_SECURE_ENV_VARS=true
+  
 services:
   - docker
   
