@@ -12,9 +12,9 @@ services:
   - docker
   
 before_script:
-  - docker run --env COVERALLS_REPO_TOKEN ubuntu env
   - docker-compose -f docker-compose.yml -f docker-compose-ci.yml build
   - docker-compose up -d
+  - docker run --env COVERALLS_REPO_TOKEN ubuntu env
   
 script:
   - docker exec -it cvat /bin/bash -c '/home/django/tests/node_modules/.bin/karma start tests/karma.conf.js'
