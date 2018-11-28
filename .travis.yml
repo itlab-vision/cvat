@@ -4,9 +4,6 @@ language: python
 
 python:
   - "3.5"
-
-env:
-  - TRAVIS_SECURE_ENV_VARS=true
   
 services:
   - docker
@@ -14,7 +11,6 @@ services:
 before_script:
   - docker-compose -f docker-compose.yml -f docker-compose-ci.yml build
   - docker run --env COVERALLS_REPO_TOKEN ubuntu bin/bash
-  - docker-compose run -e COVERALLS_REPO_TOKEN
   - docker-compose up -d
   
 script:
