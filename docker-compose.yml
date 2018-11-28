@@ -48,7 +48,7 @@ services:
         USER: "django"
         DJANGO_CONFIGURATION: "production"
         WITH_TESTS: "no"
-        COVERALLS_REPO_TOKEN=S8AMWXHilyXVVrhjpkWUcOlA07KM8AoPR
+        COVERALLS_REPO_TOKEN: "S8AMWXHilyXVVrhjpkWUcOlA07KM8AoPR"
     environment:
       DJANGO_MODWSGI_EXTRA_ARGS: ""
     volumes:
