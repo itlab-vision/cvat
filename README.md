@@ -1,8 +1,6 @@
 # Computer Vision Annotation Tool (CVAT)
 
 [![Gitter chat](https://badges.gitter.im/opencv-cvat/gitter.png)](https://gitter.im/opencv-cvat)
-[![Build Status](https://travis-ci.org/EvgenyShashkin/cvat.svg?branch=develop)](https://travis-ci.org/EvgenyShashkin/cvat)
-[![Coverage Status](https://coveralls.io/repos/github/EvgenyShashkin/cvat/badge.svg)](https://coveralls.io/github/EvgenyShashkin/cvat)
 
 CVAT is completely re-designed and re-implemented version of [Video Annotation Tool from Irvine, California](http://carlvondrick.com/vatic/) tool. It is free, online, interactive video and image annotation tool for computer vision. It is being used by our team to annotate million of objects with different properties. Many UI and UX decisions are based on feedbacks from professional data annotation team.
 
